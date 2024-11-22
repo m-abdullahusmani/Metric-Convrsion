@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Area Conversions - Metric Conversions - THE ULTIMATE PLATEFORM</title>
+    <!-- scroller change kro -->
+    <link rel="icon" href="../pics/title_logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Macondo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- sliderstart -->
+    <script src="../files/slider/jquery-1.11.0.min.js"></script>
+    <script src="../files/slider/jquery.sliderPro.min.js"></script>
+    <link rel="stylesheet" href="../files/slider/slider-pro.min.css">
+    <!-- sliderend -->
+    <!-- textanimation start -->
+    <script src="../files/text-animation/jquery.lettering.js"></script>
+    <script src="../files/text-animation/jquery.textillate.js"></script>
+    <link rel="stylesheet" href="../files/text-animation/animate.css">
+    <script src="../files/text-animation/typed.min.js"></script>
+    <!-- textanimation end -->
+    <!-- aos start-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos end-->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+     <!-- Loader Start -->
+     <div class="loader"></div> 
+     <!-- Loader End -->
+    <nav>
+        <div id="logo1" class="logo1">
+            <a href="../../home.html"><img src="..//pics/logo.png" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a  href="../../home.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="conversions.html">Conversions</a>
+            </li>
+            <li>
+                <a href="articles.html">History</a>
+            </li>
+            <li>
+                <a href="units.html">Chart</a>
+            </li>
+            <li>
+                <a href="faqs.html">FAQ'S</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="wholepage">
+            <div class="sidenav">
+                    <div class="container">
+                            <p class="text-center mtc">MTC</p> <hr>
+                                <ul class="ul1">
+                                        <a class="a1" href="length.html"><li class="li1">Length</li></a>
+                                        <a class="a1" href="area.html"><li class="active111 li1">Area</li></a>
+                                        <a class="a1" href="volume.html"><li class="li1">Volume</li></a>
+                                        <a class="a1" href="mass.html"><li class="li1">Mass</li></a>
+                                        <a class="a1" href="temperature.html"><li class="li1">Temperature</li></a>
+                                        <!-- <a class="a1" href="currency.html"><li class="li1">Currency</li></a> -->
+            <hr>
+                                </ul> <h3 class="text-center">Like Us On:</h3>
+                            <div class="text-center">
+                                <a href="#facebook-page"><i class="fab fa-facebook blue"></i></a>
+                                <a href="#instagram-page"><i class="fab fa-instagram blue"></i></a>  
+                                <a href="#gmail-page"><i class="fab fa-google-plus-g blue "></i></a>  
+                                <a href="#twitter-page"><i class="fab fa-twitter blue"></i></a> <br><br><br>
+                            </div>
+                      
+            </div>          
+            </div>
+            <div id="hide" class="parta">     
+                <i  onclick="myFunctionhide()" class="fas fa-chevron-left partabtn"></i>
+                <div class="container">
+                        <p class="text-center mtc">MTC</p> <hr>
+                            <ul class="ul1">
+                                    <a class="a1" href="length.html"><li class="li1">Length</li></a>
+                                    <a class="a1" href="area.html"><li class="active111 li1">Area</li></a>
+                                    <a class="a1" href="volume.html"><li class="li1">Volume</li></a>
+                                    <a class="a1" href="mass.html"><li class="li1">Mass</li></a>
+                                    <a class="a1" href="temperature.html"><li class="li1">Temperature</li></a>
+                                    <!-- <a class="a1" href="currency.html"><li class="li1">Currency</li></a> -->
+        
+                            </ul> <hr>
+                           
+                  
+        </div>  
+            </div>
+            <div id="mainpart" class="partb">
+                <i onclick="myFunctionshow()" class="fas fa-chevron-right partbbtn"></i> 
+                
+      <div class="converter-wrapper">
+            <h1 class="titleheading">AREA CONVERTER</h1>
+          
+            <form name="property_form">
+              <span>
+                <select class="rolll" disabled name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+                </select>
+              </span>
+            </form>
+          
+            <div class="converter-side-a">
+              <form name="form_A" onSubmit="return false">
+                <input type="text" class="numbersonly" name="unit_input" maxlength="12" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+                <span>
+                  <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+                  </select>
+                </span>
+              </form>
+            </div> <!-- /converter-side-a -->
+            
+           <div class="converter-equals">
+             <p>=</p>
+           </div> <!-- /converter-side-a -->
+          
+            <div class="converter-side-b">
+              <form name="form_B" onSubmit="return false">
+                <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
+                <span>
+                  <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+                  </select>
+                </span>
+              </form>
+            </div> <!-- /converter-side-b -->
+          </div><!-- /converter-wrapper -->
+    
+            </div><br>
+    
+        </div>
+        <div class="divhun">
+          <div class="section4 justify">
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-6 center hide-on-mobile">
+                      <img class="footlogo" src="../pics/logo_footer.png" alt="">
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-12"><br>
+                      <h2 class="pad">About Us</h2>
+                      <p class="white1">Welcome to our website, where you'll find a wealth of information in the form of newsletter articles, calculators, and research reports.<br>We hope your visit will help you understand the opportunities and potential rewards.</p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-12"><br>
+                      <h2 class="pad">Contact</h2>
+                      <p class="white1 justify"> abdullahusmani093@gmail.com </p>
+                      <div class="mobview">
+                      <img class="footlogo1 text-center" src="../pics/logo_footer.png" alt="">
+                      <p class="white1"> XYZ Road,North Karachi, karachi<br><br><br><br>Get in Touch With<br><br>
+                      <a href="#facebook-page"><i class="fab fa-facebook footsocial"></i></a>
+                      <a href="#instagram-page"><i class="fab fa-instagram footsocial"></i></a>  
+                      <a href="#gmail-page"><i class="fab fa-google-plus-g footsocial"></i></a>  
+                      <a href="#twitter-page"><i class="fab fa-twitter footsocial"></i></a>  </p>
+                  </div>
+                  </div>
+              </div>
+          </div> 
+              </div> 
+              <script>
+    var property = new Array();
+    var unit = new Array();
+    var factor = new Array();
+    
+    
+    property[0] = "Convert Your Area Here !";
+unit[0] = new Array("Square meter (m^2)", "Acre (acre)", "Are", "Barn (barn)", "Hectare", "Rood", "Square centimeter", "Square kilometer", "Circular mil", "Square foot (ft^2)", "Square inch (in^2)", "Square mile (mi^2)", "Square yard (yd^2)");
+factor[0] = new Array(1, 4046.856, 100, 1E-28, 10000, 1011.71413184285, .0001, 1000000, 5.067075E-10, 9.290304E-02, 6.4516E-04, 2589988, .8361274);
+
+    function UpdateUnitMenu(propMenu, unitMenu) {
+      // Updates the units displayed in the unitMenu according to the selection of property in the propMenu.
+      var i;
+      i = propMenu.selectedIndex;
+      FillMenuWithArray(unitMenu, unit[i]);
+    }
+    
+    function FillMenuWithArray(myMenu, myArray) {
+      // Fills the options of myMenu with the elements of myArray.
+      // !CAUTION!: It replaces the elements, so old ones will be deleted.
+      var i;
+      myMenu.length = myArray.length;
+      for (i = 0; i < myArray.length; i++) {
+        myMenu.options[i].text = myArray[i];
+      }
+    }
+    
+    function CalculateUnit(sourceForm, targetForm) {
+      // A simple wrapper function to validate input before making the conversion
+      var sourceValue = sourceForm.unit_input.value;
+    
+      // First check if the user has given numbers or anything that can be made to one...
+      sourceValue = parseFloat(sourceValue);
+      
+        ConvertFromTo(sourceForm, targetForm);
+      
+    }
+    
+    function ConvertFromTo(sourceForm, targetForm) {
+      // Converts the contents of the sourceForm input box to the units specified in the targetForm unit menu and puts the result in the targetForm input box.In other words, this is the heart of the whole script...
+      var propIndex;
+      var sourceIndex;
+      var sourceFactor;
+      var targetIndex;
+      var targetFactor;
+      var result;
+    
+      // Start by checking which property we are working in...
+      propIndex = document.property_form.the_menu.selectedIndex;
+    
+      // Let's determine what unit are we converting FROM (i.e. source) and the factor needed to convert that unit to the base unit.
+      sourceIndex = sourceForm.unit_menu.selectedIndex;
+      sourceFactor = factor[propIndex][sourceIndex];
+    
+      // Cool! Let's do the same thing for the target unit - the units we are converting TO:
+      targetIndex = targetForm.unit_menu.selectedIndex;
+      targetFactor = factor[propIndex][targetIndex];
+    
+      // Simple, huh? let's do the math: a) convert the source TO the base unit: (The input has been checked by the CalculateUnit function).
+    
+      result = sourceForm.unit_input.value;
+      // Handle Temperature increments!
+      if (property[propIndex] == "Temperature") {
+        result = parseFloat(result) + tempIncrement[sourceIndex];
+      }
+      result = result * sourceFactor;
+    
+      // not done yet... now, b) use the targetFactor to convert FROM the base unit
+      // to the target unit...
+      result = result / targetFactor;
+      // Again, handle Temperature increments!
+      if (property[propIndex] == "Temperature") {
+        result = parseFloat(result) - tempIncrement[targetIndex];
+      }
+    
+      // Ta-da! All that's left is to update the target input box:
+      targetForm.unit_input.value = result;
+    }
+    
+    // This fragment initializes the property dropdown menu using the data defined above in the 'Data Definitions' section
+    window.onload = function(e) {
+      FillMenuWithArray(document.property_form.the_menu, property);
+      UpdateUnitMenu(document.property_form.the_menu, document.form_A.unit_menu);
+      UpdateUnitMenu(document.property_form.the_menu, document.form_B.unit_menu)
+    }
+    
+   
+    
+    </script>
+    
+
+
+
+    <script src="../../script.js"></script>
+
+
+
+</body>

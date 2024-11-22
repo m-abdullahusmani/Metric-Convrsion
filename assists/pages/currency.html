@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Conversions - Metric Conversions - THE ULTIMATE PLATEFORM</title>
+    <!-- scroller change kro -->
+    <link rel="icon" href="../pics/title_logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Macondo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- sliderstart -->
+    <script src="../files/slider/jquery-1.11.0.min.js"></script>
+    <script src="../files/slider/jquery.sliderPro.min.js"></script>
+    <link rel="stylesheet" href="../files/slider/slider-pro.min.css">
+    <!-- sliderend -->
+    <!-- textanimation start -->
+    <script src="../files/text-animation/jquery.lettering.js"></script>
+    <script src="../files/text-animation/jquery.textillate.js"></script>
+    <link rel="stylesheet" href="../files/text-animation/animate.css">
+    <script src="../files/text-animation/typed.min.js"></script>
+    <!-- textanimation end -->
+    <!-- aos start-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos end-->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+     <!-- Loader Start -->
+     <div class="loader"></div> 
+     <!-- Loader End -->
+    <nav>
+        <div id="logo1" class="logo1">
+            <a href="../../home.html"><img src="..//pics/logo.png" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a  href="../../home.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="conversions.html">Conversions</a>
+            </li>
+            <li>
+                <a href="articles.html">History</a>
+            </li>
+            <li>
+                <a href="units.html">Chart</a>
+            </li>
+            <li>
+                <a href="faqs.html">FAQ'S</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="wholepage">
+            <div class="sidenav">
+                    <div class="container">
+                            <p class="text-center mtc">MTC</p> <hr>
+                                <ul class="ul1">
+                                    <a class="a1" href="length.html"><li class="li1">Length</li></a>
+                                    <a class="a1" href="area.html"><li class="li1">Area</li></a>
+                                    <a class="a1" href="volume.html"><li class="li1">Volume</li></a>
+                                    <a class="a1" href="mass.html"><li class="li1">Mass</li></a>
+                                    <a class="a1" href="temperature.html"><li class="li1">Temperature</li></a>
+                                    <a class="a1" href="currency.html"><li class="active111 li1">Currency</li></a>
+            <hr>
+                                </ul> <h3 class="text-center">Like Us On:</h3>
+                            <div class="text-center">
+                                <a href="#facebook-page"><i class="fab fa-facebook blue"></i></a>
+                                <a href="#instagram-page"><i class="fab fa-instagram blue"></i></a>  
+                                <a href="#gmail-page"><i class="fab fa-google-plus-g blue "></i></a>  
+                                <a href="#twitter-page"><i class="fab fa-twitter blue"></i></a> <br><br><br>
+                            </div>
+                      
+            </div>          
+            </div>
+            <div id="hide" class="parta">     
+                <i  onclick="myFunctionhide()" class="fas fa-chevron-left partabtn"></i>
+                <div class="container">
+                        <p class="text-center mtc">MTC</p> <hr>
+                            <ul class="ul1">
+                                <a class="a1" href="length.html"><li class="li1">Length</li></a>
+                                <a class="a1" href="area.html"><li class="li1">Area</li></a>
+                                <a class="a1" href="volume.html"><li class="li1">Volume</li></a>
+                                <a class="a1" href="mass.html"><li class="li1">Mass</li></a>
+                                <a class="a1" href="temperature.html"><li class="li1">Temperature</li></a>
+                                <a class="a1" href="currency.html"><li class="active111 li1">Currency</li></a>
+        
+                            </ul> <hr>
+                           
+                  
+        </div>  
+            </div>
+            <div id="mainpart" class="partb">
+                <i onclick="myFunctionshow()" class="fas fa-chevron-right partbbtn"></i> 
+                
+      <div class="currency1 blackk cur">
+            <h1 class="titleheading">CURRENCY CONVERTER</h1>
+            <div id="demo-rate-convert">
+            
+            </div>
+            <script>
+                var apiTargetHtmlObj = document.getElementById("demo-rate-convert");
+                var tmScript = document.createElement("script");
+                tmScript.src = "https://www.transfermate.com/en/exchange_rates_api.asp?csel=GMD,PKR&cshort=";
+                document.getElementsByTagName("head")[0].appendChild(tmScript);
+            </script>
+                  <!-- <h3 class="black">http://data.fixer.io/api/latest?access_key=8920deaf10a58407441ac08a05b33754</h3> 
+
+      </div>
+      <div class="divhun">
+        <div class="section4 justify">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-6 center hide-on-mobile">
+                    <img class="footlogo" src="../pics/logo_footer.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12"><br>
+                    <h2 class="pad">About Us</h2>
+                    <p class="white1">Welcome to our website, where you'll find a wealth of information in the form of newsletter articles, calculators, and research reports.<br>We hope your visit will help you understand the opportunities and potential rewards.<br><br><br> Product are offered through [Metric Conversions]. APTECH, North karachi, Karachi.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12"><br>
+                    <h2 class="pad">Contact</h2>
+                    <div class="mobview">
+                    <img class="footlogo1 text-center" src="../pics/logo_footer.png" alt="">
+                    <p class="white1"> Aptech, XYZ Road,North Karachi, karachi<br><br><br><br>Get in Touch With<br><br>
+                    <a href="#facebook-page"><i class="fab fa-facebook footsocial"></i></a>
+                    <a href="#instagram-page"><i class="fab fa-instagram footsocial"></i></a>  
+                    <a href="#gmail-page"><i class="fab fa-google-plus-g footsocial"></i></a>  
+                    <a href="#twitter-page"><i class="fab fa-twitter footsocial"></i></a>  </p>
+                </div>
+                </div>
+            </div>
+        </div> 
+            </div>  
+        
+
+    <script src="../../script.js"></script>
+
+
+
+</body>
